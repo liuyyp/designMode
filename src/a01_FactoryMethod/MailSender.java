@@ -5,5 +5,6 @@ public class MailSender implements Sender {
     public void Send() {  
         System.out.println("this is mailsender!");  
 //        test
+        //232432432
     }  
 }  
