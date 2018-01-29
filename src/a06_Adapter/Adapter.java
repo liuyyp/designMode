@@ -1,9 +1,14 @@
 package a06_Adapter;
 
-public class Adapter extends Source implements Targetable {  
-	  
-    @Override  
-    public void method2() {  
-        System.out.println("this is the targetable method!");  
-    }  
+/**
+ * 类适配器方式 （使用extends，由于只能单继承，不方便扩展）
+ * @author glodon
+ */
+public class Adapter extends KeyBoard implements USB {
+
+	@Override
+	public void usbType() {
+		type();
+	}  
+	
 }

@@ -15,10 +15,7 @@ public class Singleton {
   
     /* 静态工程方法，创建实例 */  
     public static Singleton getInstance() {  
-    	if (instance != null) {  
-    		return instance;  
-        } 
         return instance;  
-    }  
+    }
   
 }  

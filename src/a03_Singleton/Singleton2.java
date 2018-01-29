@@ -14,7 +14,7 @@ public class Singleton2 {
     }  
   
     /* 静态工程方法，创建实例 */  
-    public synchronized static Singleton2 getInstance() {  
+    public synchronized static Singleton2 getInstance() {
     	if (instance == null) {  
     		instance = new Singleton2();  
         }
