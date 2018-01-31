@@ -1,8 +1,8 @@
 package a06_Adapter;
 
-public class KeyBoard {
+public class KeyBoard implements PS2{
 
 	public void type(){
-		System.out.println("键盘打字！");
+		System.out.println("圆口键盘打字！");
 	}
 }

@@ -6,7 +6,7 @@ package a03_Singleton;
  */
 public class Singleton {  
 	  
-    /* 持有私有静态实例，防止被引用，此处赋值为null，目的是实现延迟加载 */  
+    /* 持有私有静态实例，防止被引用*/  
     private static Singleton instance = new Singleton();  
   
     /* 私有构造方法，防止被实例化 */  
@@ -17,5 +17,5 @@ public class Singleton {
     public static Singleton getInstance() {  
         return instance;  
     }
-  
+    
 }  

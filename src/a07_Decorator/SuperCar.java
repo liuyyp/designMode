@@ -13,6 +13,7 @@ abstract class SuperCar implements ICar {
 	@Override
 	public void move() {
 		car.move();
+		newFun();
 	}
 }
 
@@ -28,12 +29,6 @@ class FlyCar extends SuperCar {
 		System.out.println("天上飞！");
 	}
 
-	@Override
-	public void move() {
-		super.move();
-		newFun();
-	}
-	
 }
 
 //ConcreteDecorator具体装饰角色
@@ -47,12 +42,6 @@ class WaterCar extends SuperCar {
 		System.out.println("水上游！");
 	}
 	
-	@Override
-	public void move() {
-		super.move();
-		newFun();
-	}
-	
 }
 
 //ConcreteDecorator具体装饰角色
@@ -64,12 +53,6 @@ class AICar extends SuperCar {
 	
 	public void newFun(){
 		System.out.println("自动驾驶！");
-	}
-	
-	@Override
-	public void move() {
-		super.move();
-		newFun();
 	}
 	
 }

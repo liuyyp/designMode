@@ -8,7 +8,7 @@ public class Test {
 
 	public static void main(String[] args) {  
         CarFactory factory = new CarFactory();  
-        Car sender = factory.produce("audi");  
-        sender.run();  
+        Car car = factory.produce("byd");  
+        car.run();
     }
 }

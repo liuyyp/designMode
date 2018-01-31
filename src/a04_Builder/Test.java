@@ -6,8 +6,11 @@ package a04_Builder;
 public class Test {
 
 	public static void main(String[] args) {  
-		CarTeamBuilder carTeamBuilder = new CarTeamBuilder();
-		CarTeam carTeam = carTeamBuilder.buildCarTeam();
-		carTeam.run();
+		Derector derector = new Derector(new DateBuilder1());
+		System.out.println( derector.getDate(2018, 1, 1) );
+		
+		
+		Derector derector2 = new Derector(new DateBuilder2());
+		System.out.println( derector2.getDate(2018, 1, 1) );
     }
 }

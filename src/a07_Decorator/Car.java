@@ -4,6 +4,6 @@ package a07_Decorator;
 class Car implements ICar {
 	@Override
 	public void move() {
-		System.out.println("陆地上跑！");
+		System.out.println("普通汽车陆地上跑！");
 	}
 }

@@ -2,8 +2,6 @@ package a10_Bridge;
 
 /**
  * 电脑类型的维度
- * @author Administrator
- *
  */
 public class Computer2 {
 	

@@ -6,22 +6,22 @@ public class ProxyStar implements Star {
 
 	@Override
 	public void collectMoney() {
-		System.out.println("ProxyStar.collectMoney()");
+		System.out.println("经纪人--收钱");
 	}
 
 	@Override
 	public void confer() {
-		System.out.println("ProxyStar.confer()");
+		System.out.println("经纪人--面谈");
 	}
 
 	@Override
 	public void signContract() {
-		System.out.println("ProxyStar.signContract()");
+		System.out.println("经纪人--签合同");
 	}
 
 	@Override
 	public void sing() {
-		System.out.println("经纪人准备工作。");
+		System.out.println("经纪人找歌手准备唱歌。");
 		star.sing();
 	}
 

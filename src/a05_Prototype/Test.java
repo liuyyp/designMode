@@ -22,13 +22,11 @@ public class Test {
 		stuffs.add("aaa");
 		stuffs.add("bbb");
 		Sheep s1 = new Sheep("多利", stuffs);
-		Sheep s2 = s1.clone();
+		Sheep s2 = s1.cloneBySerial();
 		System.out.println("克隆出来的s2 叫：" + s2.getName());
 		s2.getStuff().add("ccc");
 		
-		System.out.println("s1的大小：" + s1.getStuff().size());
-		System.out.println("s2的大小：" + s2.getStuff().size());
-		System.out.println(s1.getStuff().hashCode());
-		System.out.println(s2.getStuff().hashCode());
+		System.out.println("s1的东西：" + s1.getStuff());
+		System.out.println("s2的东西：" + s2.getStuff());
     }
 }

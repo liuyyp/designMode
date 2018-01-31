@@ -2,8 +2,6 @@ package a10_Bridge;
 
 /**
  * 品牌
- * @author Administrator
- *
  */
 public interface Brand {
 	void sale();

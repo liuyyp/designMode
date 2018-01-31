@@ -2,8 +2,6 @@ package a11_Composite;
 
 /**
  * 抽象组件
- * @author Administrator
- *
  */
 public interface Component {
 	void operation();

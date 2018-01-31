@@ -7,6 +7,9 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 
+/**
+ * 若要使用clone方法必须要实现Clonneable接口,以达到标记的作用，不然会报CloneNotSupportedException	
+ */
 public class Sheep implements Cloneable,Serializable{
 	private String name;
 	private ArrayList<String> stuff;
@@ -15,6 +18,14 @@ public class Sheep implements Cloneable,Serializable{
 		super();
 		this.name = name;
 		this.stuff = stuff;
+	}
+	
+	public Sheep(){
+		try {
+			Thread.sleep(10);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	@Override
@@ -28,6 +39,7 @@ public class Sheep implements Cloneable,Serializable{
 		return obj;
 	}
 	
+	//深度复制
 	public Sheep deepClone(){
 		Sheep obj = null;
 		try {

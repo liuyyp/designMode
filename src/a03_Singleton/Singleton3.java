@@ -2,7 +2,13 @@ package a03_Singleton;
 
 /**
  * 单例模式 - 双重检查
- *
+ *从1.5开始，加了volatile关键字的引用，它的初始化就不能是： 
+	- a. 先分配内存，让instance指向这块内存 
+	- b. 在内存中创建对象
+	
+	而应该是： 
+	- a.在内存中创建对象 
+	- b.让instance指向这个对象.
  */
 public class Singleton3 {  
 	  
@@ -17,11 +23,11 @@ public class Singleton3 {
     public static Singleton3 getInstance() {  
     	//double check
     	if (instance == null) {  
-            synchronized (instance) {  
-                if (instance == null) {  
-                    instance = new Singleton3();  
+            synchronized (Singleton3.class) {  
+                if (instance == null) {
+                    instance = new Singleton3();
                 }  
-            }  
+            }
         } 
         return instance;  
     }  
